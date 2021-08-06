@@ -16,16 +16,20 @@
 #navbar{
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0px;
 }
 
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width:100%;
     z-index: -1;
-    opacity: 1.5;
+    opacity: 20px;
 }
 
 /*Navigation Bar:  Logo and Images */
@@ -40,9 +44,7 @@
 
 }
 /* Navigation Bar: List Styling */
-#navbar{
-    position: relative;
-}
+
 #navbar ul{
     display: flex;
     font-family: 'Bebas Neue', cursive;
@@ -73,7 +75,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 450px;
+    height: 510px;
     justify-content: center;
     align-items: center;
 }
@@ -82,7 +84,8 @@
     content: "";
     position: absolute;
     background: url('../backg1.jpg') no-repeat center center/cover;
-    
+    top: 0px;
+    left: 0px;
     height: 100%;
     width:100%;
     z-index: -1;
@@ -102,8 +105,54 @@
     font-family: 'Lobster', cursive;
 }
 
+/* Service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #fffae5;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services{}
+#services{}
+#services{}
+#services{}
+
+
 /* Utility Class */
 .h-primary{
     font-size: 3.8rem;
     padding: 12px;
+    font-family: 'Lobster', cursive;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: magenta;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
 }
