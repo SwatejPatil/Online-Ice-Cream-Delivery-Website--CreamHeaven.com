@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 510px;
+    height: 700px;
     justify-content: center;
     align-items: center;
 }
@@ -86,7 +86,7 @@
     background: url('../backg1.jpg') no-repeat center center/cover;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: 800px;
     width:100%;
     z-index: -1;
     opacity: 0.9;
@@ -113,9 +113,10 @@
 #services .box{
     border: 2px solid brown;
     padding: 34px;
-    margin: 3px 6px;
+    margin: 5px 10px;
     border-radius: 28px;
     background-color: #fffae5;
+    margin-bottom: 20px;
 }
 #services .box img{
     height: 150px;
@@ -123,13 +124,97 @@
     display: block;
 }
 
+#services .box p{
+    font-family: 'Bebas Neue', cursive;
+
+}
 #services{}
 #services{}
 #services{}
-#services{}
+
+/* Client section */
+
+#client-section{
+    position: relative;
+    height: 354px;
+}
+
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg2.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-items{
+    padding: 50px;
+}
+
+#clients img{
+    height: 140px;
+}
+
+
+/* contact section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../contact.jpg") no-repeat center center/cover;
+}
 
 
 /* Utility Class */
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    font-size: 1rem;
+    padding: 9px 20px;
+}
+
 .h-primary{
     font-size: 3.8rem;
     padding: 12px;
